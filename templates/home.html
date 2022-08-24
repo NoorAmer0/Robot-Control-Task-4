@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8">
+    <title>Robot Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/Style.css') }}">
+</head>
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="{{ url_for('static',filename='Script.js') }}"></script>
+<h2>Robot Dashboard</h2>
+<div class="btns">
+    <button class="btn" id="f" onclick="storeBtnInfo(id)">Forward </button>
+    <div class="centerd-btns">
+        <button class="btn" id = 'l' onclick="storeBtnInfo(id)">Left</button>
+        <button class="btn" id="s" onclick="storeBtnInfo(id)">Stop</button>
+        <button class="btn" id="r" onclick="storeBtnInfo(id)">Right</button>
+
+    </div>
+    <button class="btn" id ='b'>Backward</button>
+</div>
+
+<h3>Motion report <a href="{{ url_for('displayReport') }}">here</a></h3>
+
+</body>
+
+</html>
