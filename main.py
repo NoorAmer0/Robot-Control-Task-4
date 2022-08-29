@@ -4,8 +4,8 @@ import pyrebase
 
 config = {
   "apiKey": "",
-  "authDomain": "robotcontrol-f1519.firebaseapp.com",
-  "databaseURL": "https://robotcontrol-f1519-default-rtdb.firebaseio.com",
+  "authDomain": "*****",
+  "databaseURL": "****",
   "storageBucket": ""
 }
 firebase = pyrebase.initialize_app(config)
